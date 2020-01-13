@@ -5,7 +5,7 @@ var app = express();
 var PORT = process.env.PORT || 8080;
 
 app.use(express.urlencoded({extended: true}));
-app.unsubscribe(express.json());
+app.use(express.json());
 
 // make an empty array for NOTE
 var notes = [];
